@@ -16,7 +16,19 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function(){
+    return Inertia::render('Homepage', [
+        'title' => 'HomePage',
+    ]);
+})->name('homepage');
+
+Route::get('/tentangkami', function(){
+    return Inertia::render('Tentang Kami', [
+        'title' => 'Tentang Kami',
+    ]);
+})->name('tentangkami');
+
+Route::get('/welcome', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),

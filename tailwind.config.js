@@ -11,11 +11,15 @@ module.exports = {
 
     theme: {
         extend: {
+            colors: {
+                'footer': '#103732',
+                'copyright' : '#2CA999',
+            },
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Poppins', ...defaultTheme.fontFamily.sans],
             },
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [require('@tailwindcss/forms'), require('daisyui')],
 };

@@ -1,3 +1,4 @@
+import { Link } from "@inertiajs/react"
 const Footer = () => {
     return (
         <footer>
@@ -13,19 +14,19 @@ const Footer = () => {
                         <div className="mb-5">
                             <h4 className="text-orange-300 font-bold mb-6 text-2xl">Opsi Berkah Pangan</h4>
                             <ul>
-                                <li className="pb-4 font-medium"> <a href="#" className="hover:text-orange-300">Tentang Kami</a></li>
-                                <li className="pb-4 font-medium"> <a href="#" className="hover:text-orange-300">Donasi</a></li>
-                                <li className="pb-4 font-medium"> <a href="#" className="hover:text-orange-300">Usul Penerima</a></li>
-                                <li className="pb-4 font-medium"> <a href="#" className="hover:text-orange-300">Relawan</a></li>
-                                <li className="pb-4 font-medium"> <a href="#" className="hover:text-orange-300">Kontak Kami</a></li>
+                                <li className="pb-4 font-medium"> <Link href={route('tentangkami-latarbelakang')} className="hover:text-orange-300">Tentang Kami</Link></li>
+                                <li className="pb-4 font-medium"> <Link href="#" className="hover:text-orange-300">Donasi</Link></li>
+                                <li className="pb-4 font-medium"> <Link href="#" className="hover:text-orange-300">Usul Penerima</Link></li>
+                                <li className="pb-4 font-medium"> <Link href="#" className="hover:text-orange-300">Relawan</Link></li>
+                                <li className="pb-4 font-medium"> <Link href="#" className="hover:text-orange-300">Kontak Kami</Link></li>
                             </ul>
                         </div>
                         <div className="mb-5">
                             <h4 className="text-orange-300 font-bold mb-6 text-2xl">Hubungi Kami</h4>
                             <ul>
-                                <li className="pb-4 font-medium"> <a href="#" className="hover:text-orange-300">Lorem ipsum dolor, sit amet consectetur</a></li>
-                                <li className="pb-4 font-medium"> <a href="#" className="hover:text-orange-300">xxxx-xxxx-xxxx</a></li>
-                                <li className="pb-4 font-medium"> <a href="#" className="hover:text-orange-300">Berkahpanganid@yahoo.com</a></li>
+                                <li className="pb-4 font-medium"> <Link href="#" className="hover:text-orange-300">Lorem ipsum dolor, sit amet consectetur</Link></li>
+                                <li className="pb-4 font-medium"> <Link href="#" className="hover:text-orange-300">xxxx-xxxx-xxxx</Link></li>
+                                <li className="pb-4 font-medium"> <Link href="#" className="hover:text-orange-300">Berkahpanganid@yahoo.com</Link></li>
                             </ul>
                         </div>
                     </div>

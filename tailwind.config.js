@@ -14,6 +14,8 @@ module.exports = {
             colors: {
                 'footer': '#103732',
                 'copyright' : '#2CA999',
+                'h1': '#103732',
+                'h2' : '#4D774E',
             },
             fontFamily: {
                 sans: ['Poppins', ...defaultTheme.fontFamily.sans],

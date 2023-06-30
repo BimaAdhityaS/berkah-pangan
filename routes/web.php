@@ -22,11 +22,23 @@ Route::get('/', function(){
     ]);
 })->name('homepage');
 
-Route::get('/tentangkami', function(){
-    return Inertia::render('Tentang Kami', [
-        'title' => 'Tentang Kami',
+Route::get('/latarbelakang', function(){
+    return Inertia::render('TentangKami_LatarBelakang', [
+        'title' => 'Latar Belakang',
     ]);
-})->name('tentangkami');
+})->name('tentangkami-latarbelakang');
+
+Route::get('/visidanmisi', function(){
+    return Inertia::render('TentangKami_Visi&Misi', [
+        'title' => 'Visi dan Misi',
+    ]);
+})->name('tentangkami-visimisi');
+
+Route::get('/FaQ', function(){
+    return Inertia::render('TentangKami_Faq', [
+        'title' => 'Frequently Asked Question',
+    ]);
+})->name('tentangkami-FaQ');
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [

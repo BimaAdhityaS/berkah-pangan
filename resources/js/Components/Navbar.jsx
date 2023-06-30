@@ -17,7 +17,7 @@ const Navbar = () => {
                             <Link href={route('homepage')} className="block py-2 pl-3 pr-4 text-black font-medium hover:text-orange-300 rounded md:bg-transparent md:p-0" aria-current="page" as="button">Beranda</Link>
                         </li>
                         <li>
-                            <Link href={route('tentangkami')} className="block py-2 pl-3 pr-4 text-black font-medium hover:text-orange-300 rounded md:bg-transparent md:p-0" as="button">Tentang Kami</Link>
+                            <Link href={route('tentangkami-latarbelakang')} className="block py-2 pl-3 pr-4 text-black font-medium hover:text-orange-300 rounded md:bg-transparent md:p-0" as="button">Tentang Kami</Link>
                         </li>
                         <li>
                             <Link href="#" className="block py-2 pl-3 pr-4 text-black font-medium hover:text-orange-300 rounded md:bg-transparent md:p-0" as="button">Donasi</Link>

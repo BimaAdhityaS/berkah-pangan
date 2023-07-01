@@ -16,6 +16,8 @@ module.exports = {
                 'copyright' : '#2CA999',
                 'h1': '#103732',
                 'h2' : '#4D774E',
+                'linear-top' : '#9CC88D',
+                'linear-bottom' : '#174A41',
             },
             fontFamily: {
                 sans: ['Poppins', ...defaultTheme.fontFamily.sans],

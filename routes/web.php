@@ -22,6 +22,7 @@ Route::get('/', function(){
     ]);
 })->name('homepage');
 
+
 Route::get('/latarbelakang', function(){
     return Inertia::render('TentangKami_LatarBelakang', [
         'title' => 'Latar Belakang',
@@ -39,6 +40,18 @@ Route::get('/FaQ', function(){
         'title' => 'Frequently Asked Question',
     ]);
 })->name('tentangkami-FaQ');
+
+Route::get('/donasi', function(){
+    return Inertia::render('Donasi', [
+        'title' => 'Donasi',
+    ]);
+})->name('donasi');
+
+Route::get('/donasimakanan', function(){
+    return Inertia::render('Donasi_Makanan', [
+        'title' => 'Donasi Makanan',
+    ]);
+})->name('makanan');
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [

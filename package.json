@@ -21,6 +21,8 @@
     },
     "dependencies": {
         "@heroicons/react": "^2.0.18",
-        "daisyui": "^3.1.7"
+        "chart.js": "^4.3.0",
+        "daisyui": "^3.1.7",
+        "react-chartjs-2": "^5.2.0"
     }
 }

@@ -2,7 +2,7 @@ import { Link } from "@inertiajs/react"
 
 const Navbar = () => {
     return (
-        <nav className="bg-white dark:bg-slate-50">
+        <nav className="sticky shadow-lg top-0 z-50 bg-white dark:bg-slate-50">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center">
                     <img src="https://i.ibb.co/7VFnXgM/Berkah-Pangan-2.png" className="h-12 mr-3" alt="Berkah Pangan Logo" />
@@ -11,7 +11,7 @@ const Navbar = () => {
                     <span className="sr-only">Open main menu</span>
                     <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                 </button>
-                <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+                <div className="hidden w-full md:block md:w-auto" id="navbar-sticky">
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
                         <li>
                             <Link href={route('homepage')} className="block py-2 pl-3 pr-4 text-black font-medium hover:text-orange-300 rounded md:bg-transparent md:p-0" aria-current="page" as="button">Beranda</Link>

@@ -18,7 +18,7 @@ use Inertia\Inertia;
 
 Route::get('/', function(){
     return Inertia::render('Homepage', [
-        'title' => 'HomePage',
+        'title' => 'Beranda',
     ]);
 })->name('homepage');
 

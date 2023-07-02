@@ -20,7 +20,7 @@ return new class extends Migration
             $table->char('Jenis_Kelamin', 1);
             $table->integer('Umur');
             $table->string('Email', 100);
-            $table->integer('Telepon');
+            $table->string('Telepon',100);
             $table->string('Alasan')->nullable();
         });
     }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('ID_Kontak', true);
             $table->string('Nama', 100);
             $table->string('Email', 100)->nullable();
-            $table->integer('Telepon')->nullable();
+            $table->string('Telepon',100)->nullable();
             $table->string('Pesan')->nullable();
         });
     }

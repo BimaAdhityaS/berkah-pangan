@@ -1,7 +1,7 @@
 import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
+import Beranda from "@/Components/beranda";
 import { Head } from "@inertiajs/react";
-import Beranda from "./Beranda";
 
 
 export default function Homepage(props) {

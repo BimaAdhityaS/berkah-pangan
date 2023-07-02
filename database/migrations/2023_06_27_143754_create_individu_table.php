@@ -17,10 +17,10 @@ return new class extends Migration
             $table->integer('ID_Individu', true);
             $table->string('Nama_Lengkap', 100);
             $table->string('Alamat');
-            $table->integer('Telepon');
+            $table->string('Telepon',100);
             $table->string('Email', 100);
             $table->string('Jenis_Makanan', 100);
-            $table->date('EXP_Date');
+            $table->string('Date', 100);
             $table->integer('Jumlah_Porsi');
             $table->string('Keterangan')->nullable();
             $table->char('STATUS', 10);

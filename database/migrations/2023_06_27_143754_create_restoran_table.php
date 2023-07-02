@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('Nama_Restoran', 100);
             $table->string('Alamat');
             $table->string('Nama_CP', 100);
-            $table->integer('Telepon');
+            $table->string('Telepon',100);
             $table->string('Email', 100);
             $table->string('Jenis_Makanan', 100);
-            $table->date('EXP_Date');
+            $table->string('EXP_Date',100);
             $table->integer('Jumlah_Porsi');
             $table->string('Keterangan')->nullable();
             $table->char('STATUS', 10);

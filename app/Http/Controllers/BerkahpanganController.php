@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\berkahpangan;
+use App\Models\Individu;
+use App\Models\Restoran;
+use App\Models\UsulanPenerima;
 use Illuminate\Http\Request;
 
 class BerkahpanganController extends Controller
@@ -14,7 +16,6 @@ class BerkahpanganController extends Controller
      */
     public function index()
     {
-        //
     }
 
     /**
@@ -35,7 +36,50 @@ class BerkahpanganController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->is('individu')){
+        $individu = new Individu();
+        $individu->Nama_Lengkap = $request->nama;
+        $individu->Alamat = $request->alamat;
+        $individu->Telepon = $request->telepon;
+        $individu->Email = $request->email;
+        $individu->Jenis_Makanan = $request->makanan;
+        $individu->EXP_Date = $request->exp;
+        $individu->Jumlah_Porsi = $request->porsi;
+        $individu->Keterangan = $request->keterangan;
+        $individu->STATUS = $request->status;
+        $individu->save();
+        return redirect()->back()->with('message', 'Data berhasil terkirim');
+        }
+
+        if ($request->is('restoran')){
+        $restoran = new Restoran();
+        $restoran->Nama_Restoran = $request->nama_restoran;
+        $restoran->Alamat = $request->alamat_resto;
+        $restoran->Nama_CP = $request->nama_cp;
+        $restoran->Telepon = $request->telepon_resto;
+        $restoran->Email = $request->email_resto;
+        $restoran->Jenis_Makanan=$request->makanan_resto;
+        $restoran->EXP_Date= $request->exp_resto;
+        $restoran->Jumlah_Porsi= $request->porsi_resto;
+        $restoran->Keterangan= $request->keterangan_resto;
+        $restoran->STATUS= $request->status;
+        $restoran->save();
+        return redirect()->back()->with('message', 'Data berhasil terkirim');
+        }
+        
+        if ($request->is('penerima')){
+            $penerima = new UsulanPenerima();
+            $penerima->Nama_Lokasi = $request->lokasi;
+            $penerima->Alamat = $request->alamat;
+            $penerima->Nama_CP = $request->cp;
+            $penerima->Telepon = $request->telepon;
+            $penerima->Email = $request->email;
+            $penerima->Perkiraan_Jpenerima = $request->jpenerima;
+            $penerima->Keterangan = $request->keterangan;
+            $penerima->STATUS = $request->status;
+            $penerima->save();
+            return redirect()->back()->with('message', 'Data berhasil terkirim');
+        }
     }
 
     /**
@@ -44,7 +88,7 @@ class BerkahpanganController extends Controller
      * @param  \App\Models\berkahpangan  $berkahpangan
      * @return \Illuminate\Http\Response
      */
-    public function show(berkahpangan $berkahpangan)
+    public function show($berkahpangan)
     {
         //
     }
@@ -55,7 +99,7 @@ class BerkahpanganController extends Controller
      * @param  \App\Models\berkahpangan  $berkahpangan
      * @return \Illuminate\Http\Response
      */
-    public function edit(berkahpangan $berkahpangan)
+    public function edit($berkahpangan)
     {
         //
     }
@@ -67,7 +111,7 @@ class BerkahpanganController extends Controller
      * @param  \App\Models\berkahpangan  $berkahpangan
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, berkahpangan $berkahpangan)
+    public function update(Request $request, $berkahpangan)
     {
         //
     }
@@ -78,7 +122,7 @@ class BerkahpanganController extends Controller
      * @param  \App\Models\berkahpangan  $berkahpangan
      * @return \Illuminate\Http\Response
      */
-    public function destroy(berkahpangan $berkahpangan)
+    public function destroy($berkahpangan)
     {
         //
     }

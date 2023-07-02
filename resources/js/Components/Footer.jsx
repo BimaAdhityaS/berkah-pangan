@@ -16,7 +16,7 @@ const Footer = () => {
                             <ul>
                                 <li className="pb-4 font-medium"> <Link href={route('tentangkami-latarbelakang')} className="hover:text-orange-300">Tentang Kami</Link></li>
                                 <li className="pb-4 font-medium"> <Link href={route('donasi')} className="hover:text-orange-300">Donasi</Link></li>
-                                <li className="pb-4 font-medium"> <Link href="#" className="hover:text-orange-300">Usul Penerima</Link></li>
+                                <li className="pb-4 font-medium"> <Link href={route('penerima')} className="hover:text-orange-300">Usul Penerima</Link></li>
                                 <li className="pb-4 font-medium"> <Link href="#" className="hover:text-orange-300">Relawan</Link></li>
                                 <li className="pb-4 font-medium"> <Link href="#" className="hover:text-orange-300">Kontak Kami</Link></li>
                             </ul>

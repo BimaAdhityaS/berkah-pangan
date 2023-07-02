@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('Nama_Lokasi', 100);
             $table->string('Alamat');
             $table->string('Nama_CP', 100);
-            $table->integer('Telepon');
+            $table->string('Telepon',100);
             $table->string('Email', 100);
             $table->integer('Perkiraan_Jpenerima');
             $table->string('Keterangan')->nullable();

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BerkahpanganController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -21,7 +22,6 @@ Route::get('/', function(){
         'title' => 'Beranda',
     ]);
 })->name('homepage');
-
 
 Route::get('/latarbelakang', function(){
     return Inertia::render('TentangKami_LatarBelakang', [
@@ -52,6 +52,16 @@ Route::get('/donasimakanan', function(){
         'title' => 'Donasi Makanan',
     ]);
 })->name('makanan');
+
+Route::get('/penerima', function(){
+    return Inertia::render('Usul_Penerima', [
+        'title' => 'Usul Penerima',
+    ]);
+})->name('penerima');
+
+Route::post('/individu', [BerkahpanganController::class,'store']);
+Route::post('/restoran', [BerkahpanganController::class,'store']);
+Route::post('/penerima', [BerkahpanganController::class,'store']);
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [

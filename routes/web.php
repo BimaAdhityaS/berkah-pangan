@@ -59,6 +59,18 @@ Route::get('/penerima', function(){
     ]);
 })->name('penerima');
 
+Route::get('/relawan', function(){
+    return Inertia::render('Relawan', [
+        'title' => 'Relawan',
+    ]);
+})->name('relawan');
+
+Route::get('/kontakkami', function(){
+    return Inertia::render('Kontak_Kami', [
+        'title' => 'Relawan',
+    ]);
+})->name('kontakkami');
+
 Route::post('/individu', [BerkahpanganController::class,'store']);
 Route::post('/restoran', [BerkahpanganController::class,'store']);
 Route::post('/penerima', [BerkahpanganController::class,'store']);

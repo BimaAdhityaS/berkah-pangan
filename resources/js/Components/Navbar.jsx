@@ -26,10 +26,10 @@ const Navbar = () => {
                             <Link href={route('penerima')} className="block py-2 pl-3 pr-4 text-black font-medium hover:text-orange-300 rounded md:bg-transparent md:p-0" as="button">Usul Penerima</Link>
                         </li>
                         <li>
-                            <Link href="#" className="block py-2 pl-3 pr-4 text-black font-medium hover:text-orange-300 rounded md:bg-transparent md:p-0" as="button">Relawan</Link>
+                            <Link href={route('relawan')} className="block py-2 pl-3 pr-4 text-black font-medium hover:text-orange-300 rounded md:bg-transparent md:p-0" as="button">Relawan</Link>
                         </li>
                         <li>
-                            <Link href="#" className="block py-2 pl-3 pr-4 text-black font-medium hover:text-orange-300 rounded md:bg-transparent md:p-0" as="button">Kontak Kami</Link>
+                            <Link href={route('kontakkami')} className="block py-2 pl-3 pr-4 text-black font-medium hover:text-orange-300 rounded md:bg-transparent md:p-0" as="button">Kontak Kami</Link>
                         </li>
                     </ul>
                 </div>

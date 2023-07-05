@@ -19,6 +19,7 @@ module.exports = {
                 'linear-top': '#508062',
                 'linear-bottom': '#174A41',
                 'form': '#F2B248',
+                'button': '#103732',
             },
             fontFamily: {
                 sans: ['Poppins', ...defaultTheme.fontFamily.sans],

@@ -146,7 +146,7 @@ export default function Donasi(props) {
                                 </div>
                                 <div>
                                     <p className="text-form">Telepon (*)</p>
-                                    <input onChange={(e) => settelepon(e.target.value)} value={telepon} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="+62" required />
+                                    <input onChange={(e) => settelepon(e.target.value)} value={telepon} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="(+62) xxx-xxxx-xxxx" required />
                                 </div>
                                 <div>
                                     <p className="text-form">Jumlah Porsi (*)</p>
@@ -154,7 +154,7 @@ export default function Donasi(props) {
                                 </div>
                                 <div>
                                     <p className="text-form">Email (*)</p>
-                                    <input onChange={(e) => setemail(e.target.value)} value={email} type="email" className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" placeholder="" required />
+                                    <input onChange={(e) => setemail(e.target.value)} value={email} type="email" className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" placeholder="someone@example.com" required />
                                 <p className="text-form text-sm justify-center w-80">Peringatan : Isikan data dengan sebenar-benarnya, kami akan menghubungi anda untuk tahap selanjutnya. Terimakasih</p>
                                 </div>
                                 <div>
@@ -193,7 +193,7 @@ export default function Donasi(props) {
                                 </div>
                                 <div className="mx-auto">
                                     <p className="text-form">Telepon (*)</p>
-                                    <input onChange={(e) => settelp(e.target.value)} value={telepon_resto} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="+62" required />
+                                    <input onChange={(e) => settelp(e.target.value)} value={telepon_resto} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="(+62) xxx-xxxx-xxxx" required />
                                 </div>
                                 <div className="mx-auto">
                                     <p className="text-form">Jumlah Porsi (*)</p>
@@ -201,7 +201,7 @@ export default function Donasi(props) {
                                 </div>
                                 <div className="mx-auto">
                                     <p className="text-form">Email (*)</p>
-                                    <input onChange={(e) => setemailresto(e.target.value)} value={email_resto}  type="email" className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" placeholder="" required />
+                                    <input onChange={(e) => setemailresto(e.target.value)} value={email_resto}  type="email" className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" placeholder="someone@example.com" required />
                                 </div>
                                 <div className="lg:col-span-2 mx-auto">
                                     <p className="text-form text-center">Keterangan Tambahan</p>

@@ -95,11 +95,11 @@ export default function penerima(props) {
                     </div>
                     <div className="mx-auto">
                         <p className="text-form">Telepon (*)</p>
-                        <input onChange={(e) => settelepon(e.target.value)} value={telepon} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="+62" required />
+                        <input onChange={(e) => settelepon(e.target.value)} value={telepon} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="(+62) xxx-xxxx-xxxx" required />
                     </div>
                     <div className="mx-auto">
                         <p className="text-form">Email (*)</p>
-                        <input onChange={(e) => setemail(e.target.value)} value={email} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="email" placeholder="" required />
+                        <input onChange={(e) => setemail(e.target.value)} value={email} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="email" placeholder="someone@example.com" required />
                     </div>
                     <div className="mx-auto">
                         <p className="text-form">Perkiraan jumlah penerima (*)</p>

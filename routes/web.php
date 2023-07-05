@@ -74,6 +74,7 @@ Route::get('/kontakkami', function(){
 Route::post('/individu', [BerkahpanganController::class,'store']);
 Route::post('/restoran', [BerkahpanganController::class,'store']);
 Route::post('/penerima', [BerkahpanganController::class,'store']);
+Route::post('/kontakkami', [BerkahpanganController::class,'store']);
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [

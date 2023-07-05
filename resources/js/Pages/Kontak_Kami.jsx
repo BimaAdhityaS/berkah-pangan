@@ -1,8 +1,42 @@
 import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
-import { Head } from "@inertiajs/react";
+import { Head, router } from "@inertiajs/react";
+import { useState, useEffect } from "react";
 
 export default function Kontak_Kami(props) {
+  const [nama, setnama] = useState('');
+  const [email, setemail] = useState('');
+  const [telepon, settelepon] = useState('');
+  const [pesan, setpesan] = useState('');
+
+  const [notif, setnotif] = useState(false);
+
+  const submit = () => {
+    const data = {
+      nama,
+      email,
+      telepon,
+      pesan,
+    };
+
+    router.post('/kontakkami', data)
+    setnotif(true);
+    setnama('');
+    settelepon('');
+    setemail('');
+    setpesan('');
+  };
+
+  useEffect(() => {
+    let timer;
+    if (notif) {
+      timer = setTimeout(() => {
+        setnotif(false);
+      }, 5000);
+    }
+    return () => clearTimeout(timer);
+  }, [notif]);
+
   return (
     <>
       <Head title={props.title} />
@@ -39,26 +73,33 @@ export default function Kontak_Kami(props) {
           <div>
             <div className="my-10">
               <h2 className="text-4xl text-center font-medium">02 Kirim Kami Pesan</h2>
+              <div className="my-2 w-96 h-4 justify-center items-center mx-auto">
+                {notif && <div class="alert alert-success">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <span>Pesan berhasil tersampaikan!</span>
+                </div>}
+              </div>
             </div>
             <div className="grid grid-cols-1 gap-4 px-20 text-lg">
+
               <div className="form-text">
                 <p className="text-black">Nama Lengkap</p>
-                <input className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="Nama Lengkap" required />
+                <input onChange={(e) => setnama(e.target.value)} value={nama} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="Nama Lengkap" required />
               </div>
               <div className="form-text">
                 <p className="text-black">Email</p>
-                <input className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="email" placeholder="someone@example.com" required />
+                <input onChange={(e) => setemail(e.target.value)} value={email} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="email" placeholder="someone@example.com" required />
               </div>
               <div className="form-text">
                 <p className="text-black">Telepon</p>
-                <input className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="(+62) xxx-xxxx-xxxx" required />
+                <input onChange={(e) => settelepon(e.target.value)} value={telepon} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="(+62) xxx-xxxx-xxxx" required />
               </div>
               <div className="form-text">
                 <p className="text-black">Pesan Anda</p>
-                <textarea className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white h-48" id="keterangan" placeholder="Tulis Pesan Anda" required />
+                <textarea onChange={(e) => setpesan(e.target.value)} value={pesan} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white h-48" id="keterangan" placeholder="Tulis Pesan Anda" required />
               </div>
               <div className="py-4 mb-20">
-                <button className="btn px-10 rounded-3xl border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent capitalize">Kirim</button>
+                <button onClick={() => submit()} className="btn px-10 rounded-3xl border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent capitalize">Kirim</button>
               </div>
             </div>
           </div>

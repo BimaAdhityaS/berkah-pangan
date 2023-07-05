@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Individu;
+use App\Models\KontakKami;
 use App\Models\Restoran;
 use App\Models\UsulanPenerima;
 use Illuminate\Http\Request;
@@ -78,6 +79,16 @@ class BerkahpanganController extends Controller
             $penerima->Keterangan = $request->keterangan;
             $penerima->STATUS = $request->status;
             $penerima->save();
+            return redirect()->back()->with('message', 'Data berhasil terkirim');
+        }
+
+        if ($request->is('kontakkami')){
+            $kontakkami = new KontakKami();
+            $kontakkami->Nama = $request->nama;
+            $kontakkami->Email = $request->email;
+            $kontakkami->Telepon = $request->telepon;
+            $kontakkami->Pesan = $request->pesan;
+            $kontakkami->save();
             return redirect()->back()->with('message', 'Data berhasil terkirim');
         }
     }

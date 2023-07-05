@@ -149,7 +149,7 @@ const Beranda = () => {
                 <h2 className="card-title text-lg">Relawan</h2>
                 <p className="text-sm">Lorem ipsum dolor sit amet consectetur. Turpis fames cras neque feugiat lectus amet.</p>
                 <div className="card-actions">
-                  <button className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Mulai</button>
+                  <Link as="button" href={route('relawan')} className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Mulai</Link>
                 </div>
               </div>
             </div>

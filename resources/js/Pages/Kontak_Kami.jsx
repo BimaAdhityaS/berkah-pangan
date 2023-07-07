@@ -86,15 +86,15 @@ export default function Kontak_Kami(props) {
             </div>
             <div className="grid grid-cols-1 gap-4 px-5 md:px-20 text-lg">
               <div className="form-text">
-                <p className="text-black">Nama Lengkap <span className="text-red-500">*</span></p>
+                <p className="text-black">Nama Anda<span className="text-red-500">*</span></p>
                 <input onChange={(e) => setnama(e.target.value)} value={nama} className="mt-2 drop-shadow-lg appearance-none block w-full bg-white text-black rounded-md focus:bg-white" type="text" placeholder="Nama Lengkap" required />
               </div>
               <div className="form-text">
-                <p className="text-black">Email <span className="text-red-500">*</span></p>
+                <p className="text-black">Email</p>
                 <input onChange={(e) => setemail(e.target.value)} value={email} className="mt-2 drop-shadow-lg appearance-none block w-full bg-white text-black rounded-md focus:bg-white" type="email" placeholder="someone@example.com" required />
               </div>
               <div className="form-text">
-                <p className="text-black">Telepon <span className="text-red-500">*</span></p>
+                <p className="text-black">Telepon</p>
                 <input onChange={(e) => settelepon(e.target.value)} value={telepon} className="mt-2 drop-shadow-lg appearance-none block w-full bg-white text-black rounded-md focus:bg-white" type="text" placeholder="(+62) xxx-xxxx-xxxx" required />
               </div>
               <div className="form-text">

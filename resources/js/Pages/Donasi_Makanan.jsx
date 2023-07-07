@@ -5,8 +5,9 @@ import { Head, router } from "@inertiajs/react";
 import { useState, useEffect } from "react";
 
 export default function Donasi(props) {
-    const deskripsi = "Pengisian Data Donor Makanan";
-    const judul = "Donasi Makanan";
+    const deskripsi = "Pengisian Data Donor Makanan"
+    const judul = "Donasi Makanan"
+    const url = "https://i.ibb.co/wh27Vmz/Donasi.png"
 
     const [nama, setnama] = useState('');
     const [alamat, setalamat] = useState('');
@@ -107,7 +108,7 @@ export default function Donasi(props) {
         <div className="bg-white text-black">
             <Head title={props.title} />
             <Navbar />
-            <Header2 deskripsi={deskripsi} judul={judul} />
+            <Header2 deskripsi={deskripsi} judul={judul} img={url} />
             <div className="bg-gradient-to-b from-linear-top to-linear-bottom h-fit">
                 <div className="grid grid-cols-1 grid-rows-1">
                     <div className="h-3/4 w-4/5 my-12 mx-auto">
@@ -115,13 +116,11 @@ export default function Donasi(props) {
                         <div className="grid grid-cols-2 gap-2 w-fit mx-auto my-2">
                             <button onClick={() => ch_individu()} className={`bg-white rounded-xl w-40 h-44 ${individu ? ' border-b-8 border-green-400' : ''}`}>
                                 <img src="https://img.icons8.com/office/80/gender-neutral-user.png" className="mx-auto h-16" alt="Individu" />
-                                <p className="font-medium">Individu</p>
-                                <p className="font-medium text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint porro, deserunt</p>
+                                <p className="font-medium text-lg">Individu</p>
                             </button>
                             <button onClick={() => ch_restoran()} className={`bg-white rounded-xl w-40 h-44 ${restoran ? ' border-b-8 border-green-400' : ''}`}>
                                 <img src="https://img.icons8.com/fluency/96/restaurant-.png" className="mx-auto h-16" alt="Restoran" />
-                                <p className="font-medium">Restoran</p>
-                                <p className="font-medium text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint porro, deserunt</p>
+                                <p className="font-medium text-lg">Restoran</p>
                             </button>
                         </div>
 

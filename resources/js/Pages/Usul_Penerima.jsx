@@ -8,6 +8,7 @@ export default function penerima(props) {
 
     const deskripsi = "Penerima Berkah Pangan?"
     const judul = "Penerima"
+    const url = "https://i.ibb.co/2NzNXJn/Penerima.png"
 
     const [lokasi, setlokasi] = useState('');
     const [alamat, setalamat] = useState('');
@@ -56,7 +57,7 @@ export default function penerima(props) {
         <div className="text-black">
             <Head title={props.title} />
             <Navbar />
-            <Header2 deskripsi={deskripsi} judul={judul} />
+            <Header2 deskripsi={deskripsi} judul={judul} img={url} />
             <div className="bg-gradient-to-b from-linear-top to-linear-bottom h-fit py-10">
                 <div className="grid grid-cols-1 grid-rows-1">
                     <div className="bg-white w-5/6 lg:w-3/5 h-fit mx-auto mt-14 rounded-xl drop-shadow-2xl">

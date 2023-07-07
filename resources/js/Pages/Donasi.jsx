@@ -6,12 +6,13 @@ import { Head, Link } from "@inertiajs/react";
 export default function Donasi(props) {
     const deskripsi = "Silahkan Pilih Donasimu!"
     const judul = "Donasi"
+    const url = "https://i.ibb.co/8P6LCY6/Donasi-2.png"
 
     return (
         <div class="bg-white text-black">
             <Head title={props.title} />
             <Navbar />
-            <Header2 deskripsi={deskripsi} judul={judul} />
+            <Header2 deskripsi={deskripsi} judul={judul} img={url} />
             <div className="bg-gradient-to-b from-linear-top to-linear-bottom h-fit">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 py-24 place-items-center max-w-4xl mx-auto">
                     <div className="bg-white border-collapse border-2 border-transparent shadow-xl rounded-2xl h-96 w-96 mx-auto">

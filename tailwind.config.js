@@ -32,7 +32,7 @@ module.exports = {
             {
                 mytheme: {
                     "primary": "#0B2825",
-                    "accent":"#174A41",
+                    "accent": "#174A41",
                 },
             },
         ],

@@ -14,8 +14,8 @@ const Beranda = () => {
             </div>
             <div className="absolute h-screen flex items-center justify-center">
               <div className="w-9/12 text-center text-white">
-                <h1 className="mb-12 text-5xl font-medium">Jangan Buang Makanan Anda</h1>
-                <p className="px-32 text-xl">Sumbangkan makanan kering/beku yang berlebihan, belum dibuka, dan masih berlaku selama minimal 4 minggu, untuk didistribusikan langsung kepada mereka yang membutuhkannya.</p>
+                <h1 className="mb-12 text-5xl font-medium">Tahukah Kamu?</h1>
+                <p className="px-32 text-xl">Bahwa diIndonesia setiap tahunnya terdapat sekitar 300 kilogram makanan per orang dibuang secara tidak perlu. Ini berarti Indonesia kehilangan sekitar 9 juta ton makanan setiap tahunnya, yang setara dengan 30% dari total produksi pangan nasional.</p>
               </div>
             </div>
           </div>
@@ -75,8 +75,8 @@ const Beranda = () => {
         <div className="h-screen flex justify-center items-center bg-gradient-to-b from-linear-top to-linear-bottom">
           <div className="text-center max-w-xl text-white">
             <h2 className="text-5xl font-semibold mb-12">Berkah Pangan</h2>
-            <p className="text-lg mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, suscipit vero blanditiis sit quae dicta architecto! Culpa officiis exercitationem nostrum quidem repudiandae explicabo harum, dignissimos corporis, modi dolores aspernatur consequatur.</p>
-            <Link href={route('tentangkami-latarbelakang')} as="button" className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Read More</Link>
+            <p className="text-lg mb-12">Berkah pangan merupakan website atau platform online yang memfasilitasi proses donasi makanan kepada mereka yang membutuhkan. Tujuannya adalah untuk mengurangi pemborosan makanan, meminimalkan kelaparan, dan mendukung keberlanjutan pangan.</p>
+            <Link href={route('tentangkami-latarbelakang')} as="button" className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Baca Selengkapnya</Link>
           </div>
         </div>
         {/* About us */}
@@ -86,8 +86,8 @@ const Beranda = () => {
         <div className="h-screen flex justify-center items-center bg-white">
           <div className="max-w-xl">
             <h2 className="w-96 text-5xl font-bold text-button mb-12">Apa yang kami lakukan?</h2>
-            <p className="text-lg text-black w-4/5 mb-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis expedita debitis excepturi dolore ex ut quisquam repudiandae doloribus, amet odit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, quis?</p>
-            <Link href={route('tentangkami-FaQ')}  as="button" className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Read More</Link>
+            <p className="text-lg text-black w-4/5 mb-12">Kami menyediakan mekanisme bagi individu, organisasi, dan bisnis untuk menyumbangkan makanan yang tidak terpakai kepada mereka yang membutuhkan. Makanan tersebut dikumpulkan dari restoran, supermarket, dan pihak lain yang memiliki makanan berlebih.</p>
+            <Link href={route('tentangkami-FaQ')}  as="button" className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Baca Selengkapnya</Link>
           </div>
           <div className="shadow-xl rounded-xl">
             <img src="https://i.ibb.co/Lpx3QDn/food-bank-img.png" alt="food-bank-img" width={461} />
@@ -111,7 +111,7 @@ const Beranda = () => {
               </figure>
               <div className="card-body items-center text-center text-black">
                 <h2 className="card-title text-lg">Donasi Makanan</h2>
-                <p className="text-sm">Lorem ipsum dolor sit amet consectetur. Turpis fames cras neque feugiat lectus amet.</p>
+                <p className="text-sm">Marilah kita bersama-sama memberikan harapan dan kebahagiaan kepada mereka yang membutuhkan dengan berbagi makanan.</p>
                 <div className="card-actions">
                   <Link href={route('makanan')} as="button" className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Mulai</Link>
                 </div>
@@ -123,7 +123,7 @@ const Beranda = () => {
               </figure>
               <div className="card-body items-center text-center text-black">
                 <h2 className="card-title text-lg">Donasi Tunai</h2>
-                <p className="text-sm">Lorem ipsum dolor sit amet consectetur. Turpis fames cras neque feugiat lectus amet.</p>
+                <p className="text-sm">Ayo kita berikan perubahan positif dalam hidup orang-orang yang membutuhkan dengan memberikan donasi tunai.</p>
                 <div className="card-actions">
                   <Link as="button" href="#" className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Mulai</Link>
                 </div>
@@ -135,7 +135,7 @@ const Beranda = () => {
               </figure>
               <div className="card-body items-center text-center text-black">
                 <h2 className="card-title text-lg">Usul Penerima</h2>
-                <p className="text-sm">Lorem ipsum dolor sit amet consectetur. Turpis fames cras neque feugiat lectus amet.</p>
+                <p className="text-sm">Bersama-sama, bantu perjuangan pahlawan-pahlawan tak terlihat di sekitarmu dengan donasi yang merata dan tepat sasaran.</p>
                 <div className="card-actions">
                   <Link as="button" href={route('penerima')} className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Mulai</Link>
                 </div>
@@ -147,7 +147,7 @@ const Beranda = () => {
               </figure>
               <div className="card-body items-center text-center text-black">
                 <h2 className="card-title text-lg">Relawan</h2>
-                <p className="text-sm">Lorem ipsum dolor sit amet consectetur. Turpis fames cras neque feugiat lectus amet.</p>
+                <p className="text-sm">Jadilah pahlawan sejati dengan bergabung sebagai relawan Berkah Pangan! Memberikan dukungan kepada mereka yang membutuhkan.</p>
                 <div className="card-actions">
                   <Link as="button" href={route('relawan')} className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Mulai</Link>
                 </div>
@@ -163,7 +163,7 @@ const Beranda = () => {
         <div className="h-screen flex justify-center items-center bg-white">
           <div className="max-w-xl">
             <h2 className="w-96 text-5xl font-bold text-button mb-12">Ayo mitra dengan kami!</h2>
-            <p className="text-lg text-black w-4/5 mb-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis expedita debitis excepturi dolore ex ut quisquam repudiandae doloribus, amet odit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, quis?</p>
+            <p className="text-lg text-black w-4/5 mb-12">Marilah bergabung sebagai mitra Berkah Pangan, dan bersama-sama kita wujudkan visi menyediakan makanan berkelanjutan bagi mereka yang membutuhkan, memberi harapan baru, dan menciptakan perubahan nyata dalam kehidupan mereka.</p>
             <button className="btn rounded-3xl px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg">Kontak Kami</button>
           </div>
           <div className="drop-shadow-xl">

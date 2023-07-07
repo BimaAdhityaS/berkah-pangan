@@ -57,62 +57,57 @@ export default function penerima(props) {
             <Head title={props.title} />
             <Navbar />
             <Header2 deskripsi={deskripsi} judul={judul} />
-            <div className="bg-gradient-to-b from-linear-top to-linear-bottom h-fit">
+            <div className="bg-gradient-to-b from-linear-top to-linear-bottom h-fit py-10">
                 <div className="grid grid-cols-1 grid-rows-1">
-                    <div className="bg-white w-3/5 h-fit mx-auto mt-14 rounded-xl drop-shadow-2xl">
-                        <img className=" bg-gray-300 w-96 h-72 mx-auto my-2" />
-                        <p className="text-base font-semibold mx-6 my-2 text-justify">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Aspernatur laudantium quaerat aliquam nam nobis laboriosam dignissimos asperiores enim. Accusamus incidunt illo culpa
-                            at fugiat similique dolore accusantium iste quo autem.Aspernatur laudantium quaerat aliquam nam nobis laboriosam dignissimos
-                            asperiores enim. Accusamus incidunt illo culpa
-                            at fugiat similique dolore accusantium iste quo autem.
-                        </p>
-                        <p className="text-base font-semibold mx-6 my-2 text-justify">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Aspernatur laudantium quaerat aliquam nam nobis laboriosam dignissimos asperiores enim. Accusamus incidunt illo culpa
-                            at fugiat similique dolore accusantium iste quo autem.Aspernatur laudantium quaerat aliquam nam nobis laboriosam dignissimos
-                            asperiores enim. Accusamus incidunt illo culpa
-                            at fugiat similique dolore accusantium iste quo autem. Oleh karena itu mari kita bersama memastikan kebutuhan makananmu terpenuhi. Jangan menunda,
-                        </p>
+                    <div className="bg-white w-5/6 lg:w-3/5 h-fit mx-auto mt-14 rounded-xl drop-shadow-2xl">
                         <div className="flex justify-center items-center">
-                            <h2 className='text-2xl text-h2 font-medium mx-auto capitalize mb-4 text-center'>Mari kita bantu satu sama lain dalam melawan kelaparan!</h2>
+                            <h2 className="w-4/5 lg:w-11/12 text-2xl text-h2 font-medium mx-auto capitalize my-10 text-center">Mari kita bantu satu sama lain dalam melawan kelaparan!</h2>
                         </div>
+                        <img className=" bg-gray-300 w-3/4 h-auto mx-auto mb-7" src="https://i.ibb.co/zbgYnQW/melanie-lim-n-D3wun-G16-Fo-unsplash.jpg" />
+                        <p className="w-3/4 text-base font-semibold mx-auto my-2 text-justify indent-10">
+                            Penerima Berkah Pangan adalah mereka yang membutuhkan bantuan pangan. Hal ini meliputi masyarakat pra-sejahtera, seperti keluarga kurang mampu, pengungsi, anak-anak terlantar, lansia, atau mereka yang tinggal di daerah terpencil. Selain itu, penerima juga dapat mencakup panti asuhan yang merawat anak-anak yatim, piatu, atau terlantar, serta lembaga sosial dan kemanusiaan yang memberikan bantuan makanan kepada masyarakat yang membutuhkan.
+                        </p>
+                        <p className="w-3/4 text-base font-semibold mx-auto mt-5 mb-10 text-justify indent-10">
+                        Berkah Pangan juga dapat menyasar sekolah atau program pangan anak yang bertujuan memberikan makanan bergizi kepada anak-anak yang kurang mampu atau terancam kelaparan. Penerima Berkah Pangan juga dapat melibatkan komunitas dan kelompok masyarakat yang menghadapi kesulitan akses pangan, seperti pekerja migran, nelayan, petani, atau kelompok etnis tertentu. Melalui Berkah Pangan, upaya dilakukan untuk memastikan donasi makanan dan dana disalurkan dengan efisien dan tepat sasaran kepada mereka yang membutuhkan.
+                        </p>
                     </div>
                 </div>
-                <div className="grid lg:grid-cols-2 gap-4 my-2 w-fit mx-auto mt-4">
+                <div className="text-form text-2xl text-center font-semibold my-10">
+                        <h2>Form Usulan Penerima</h2>
+                    </div>
+                <div className="grid lg:grid-cols-2 gap-4 my-2 w-fit mx-auto mt-5">
                     <div className="mx-auto">
-                        <p className="text-form">Nama Lokasi (*)</p>
+                        <p className="text-form">Nama Lokasi <span className="text-red-500">*</span></p>
                         <input onChange={(e) => setlokasi(e.target.value)} value={lokasi} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="Nama lokasi anda" required />
                     </div>
                     <div className="mx-auto">
-                        <p className="text-form">Alamat (*)</p>
+                        <p className="text-form">Alamat <span className="text-red-500">*</span></p>
                         <input onChange={(e) => setalamat(e.target.value)} value={alamat} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="contoh: Bogor, curug Jl Rajawali 10" required />
                     </div>
                     <div className="mx-auto">
-                        <p className="text-form">Nama CP/Narahubung (*)</p>
+                        <p className="text-form">Nama CP/Narahubung <span className="text-red-500">*</span></p>
                         <input onChange={(e) => setcp(e.target.value)} value={cp} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="Nama Contact Person" required />
                     </div>
                     <div className="mx-auto">
-                        <p className="text-form">Telepon (*)</p>
+                        <p className="text-form">Telepon <span className="text-red-500">*</span></p>
                         <input onChange={(e) => settelepon(e.target.value)} value={telepon} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="(+62) xxx-xxxx-xxxx" required />
                     </div>
                     <div className="mx-auto">
-                        <p className="text-form">Email (*)</p>
+                        <p className="text-form">Email <span className="text-red-500">*</span></p>
                         <input onChange={(e) => setemail(e.target.value)} value={email} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="email" placeholder="someone@example.com" required />
                     </div>
                     <div className="mx-auto">
-                        <p className="text-form">Perkiraan jumlah penerima (*)</p>
+                        <p className="text-form">Perkiraan Jumlah Penerima <span className="text-red-500">*</span></p>
                         <input onChange={(e) => setjpenerima(e.target.value)} value={jpenerima} className="mt-2 drop-shadow-lg appearance-none block w-80 bg-white text-black rounded-md focus:bg-white" type="text" placeholder="contoh: 10 org (dalam angka saja)" required />
                     </div>
                     <div className=" lg:col-span-2">
                         <p className="text-form text-center">Keterangan Tambahan</p>
-                        <textarea onChange={(e) => setketerangan(e.target.value)} value={keterangan} className="mt-2 drop-shadow-lg appearance-none block w-5/6 mx-auto bg-white text-black rounded-md focus:bg-white h-48" id="keterangan" placeholder="Deskripsi singkat lokasinya, alasan membutuhkan bantuan pangan" />
-                        <p className="text-form text-sm justify-center my-2 w-5/6 text-center mx-auto">Peringatan : Isikan data dengan sebenar-benarnya, kami akan menghubungi anda untuk tahap selanjutnya. Terimakasih</p>
+                        <textarea onChange={(e) => setketerangan(e.target.value)} value={keterangan} className="mt-2 drop-shadow-lg appearance-none block w-4/5 mx-auto bg-white text-black rounded-md focus:bg-white h-48" id="keterangan" placeholder="Deskripsi singkat lokasinya, alasan membutuhkan bantuan pangan" />
+                        <p className="text-form text-sm my-2 w-4/5 text-center mx-auto">Peringatan : Isikan data dengan sebenar-benarnya, kami akan menghubungi anda untuk tahap selanjutnya. Terima kasih</p>
                     </div>
                 </div>
                 <div className="flex justify-center items-center">
-                    <button onClick={() => submit()} className="btn btn-primary font-white px-28 rounded-2xl capitalize my-4">Kirim</button>
+                    <button onClick={() => submit()} className="btn btn-primary font-white px-28 rounded-2xl capitalize my-4 shadow-lg">Kirim</button>
                 </div>
                 <div className="justify-center items-center my-4 w-2/4 mx-auto">
                     {notif && <div class="alert alert-success">
@@ -121,8 +116,8 @@ export default function penerima(props) {
                     </div>
                     }
                 </div>
-                <Footer />
             </div>
+            <Footer />
         </div>
     )
 }

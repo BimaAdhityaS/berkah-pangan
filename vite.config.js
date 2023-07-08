@@ -11,13 +11,14 @@ export default defineConfig({
         }),
 
         react(),
-
-        module.exports = {
-            root: 'src',
-            build: {
-              outDir: '../dist'
-            }
-          }
-          
     ],
+
+    root: path.join(__dirname, "src"),
+
+    build: {
+      outDir: path.join(__dirname, "dist"),
+      rollupOptions: {
+        input: glob.sync(path.resolve(__dirname, "src", "*.jsx")),
+      },
+    },
 });

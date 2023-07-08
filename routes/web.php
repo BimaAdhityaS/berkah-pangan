@@ -17,11 +17,7 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function(){
-    return Inertia::render('Homepage', [
-        'title' => 'Beranda',
-    ]);
-})->name('homepage');
+Route::get('/', [BerkahpanganController::class, 'index'])->name('homepage');
 
 Route::get('/latarbelakang', function(){
     return Inertia::render('TentangKami_LatarBelakang', [

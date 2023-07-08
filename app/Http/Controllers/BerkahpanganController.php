@@ -7,6 +7,7 @@ use App\Models\KontakKami;
 use App\Models\Restoran;
 use App\Models\UsulanPenerima;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class BerkahpanganController extends Controller
 {
@@ -17,6 +18,9 @@ class BerkahpanganController extends Controller
      */
     public function index()
     {
+        return Inertia::render('Homepage', [
+            'title' => 'Beranda',
+        ]);
     }
 
     /**

@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "C:/Kuliah Bima/Pembelajaran Kuliah/Semester 4/Gemastik/Github/berkah-pangan", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/" }
+    ],
+    "output": {
+      "dir": "dist"
+    }
+  }

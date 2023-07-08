@@ -118,7 +118,7 @@ const Beranda = () => {
           <h2 className="w-full text-4xl md:text-5xl font-bold text-button mb-10 md:mb-12 text-left md:text-left">Ayo mitra dengan kami!</h2>
           <p className="text-lg text-black w-full mb-12 text-left md:text-left">Marilah bergabung sebagai mitra Berkah Pangan, dan bersama-sama kita wujudkan visi menyediakan makanan berkelanjutan bagi mereka yang membutuhkan, memberi harapan baru, dan menciptakan perubahan nyata dalam kehidupan mereka.</p>
           <div className="text-left">
-            <button className="btn rounded-3xl px-6 md:px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg capitalize">Kontak Kami</button>
+            <Link as="button" href={route('kontakkami')}  className="btn rounded-3xl px-6 md:px-10 border-transparent bg-button text-white hover:bg-linear-top hover:border-transparent shadow-lg capitalize">Kontak Kami</Link>
           </div>
         </div>
         <div className="shadow-xl flex justify-center">

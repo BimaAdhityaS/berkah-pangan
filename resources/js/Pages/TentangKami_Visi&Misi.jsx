@@ -5,11 +5,13 @@ import About from '@/Components/Tentang Kami/Navbar_About';
 import Footer from '@/Components/Footer';
 
 export default function TentangKami(props) {
+    const url = "https://img.freepik.com/free-photo/conceptual-business-illustration-with-wooden-blocks-icons-marble-background_2100-491.jpg?w=996&t=st=1688798619~exp=1688799219~hmac=967d2456e7e7d6d290453fbb05de342930a67f0bae0455074ae0c75d553e17b5"
+
     return (
         <div className='bg-white'>
             <Head title={props.title} />
             <Navbar />
-            <About />
+            <About img={url}  />
             <div className="my-20 text-black mx-auto w-4/5 border-2 border-slate-100">
                 <h1 className="font-medium text-4xl text-h1 text-center py-10">Visi dan Misi</h1>
                 <h2 className="w-3/4 mx-auto text-2xl text-h2 font-medium">Visi : Mewujudkan akses pangan yang merata, berkelanjutan, dan bermakna bagi semua masyarakat. </h2>

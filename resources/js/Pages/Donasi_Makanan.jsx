@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 export default function Donasi(props) {
     const deskripsi = "Pengisian Data Donor Makanan"
     const judul = "Donasi Makanan"
-    const url = "https://i.ibb.co/wh27Vmz/Donasi.png"
+    const url = "https://img.freepik.com/premium-photo/group-young-volunteers-smiing-happy-working-charity-center_839833-7079.jpg?w=900"
 
     const [nama, setnama] = useState('');
     const [alamat, setalamat] = useState('');

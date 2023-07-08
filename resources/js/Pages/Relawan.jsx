@@ -7,8 +7,8 @@ export default function Relawan(props) {
     <>
       <Head title={props.title} />
       <Navbar />
-      <div className= "w-auto h-36 flex flex-col justify-center items-center text-black" style={{ backgroundImage: `url("https://i.ibb.co/PgspTBN/Relawan.png")`, backgroundSize: 'auto 100%', backgroundPosition: 'center' }}>
-        <h1 className="font-bold text-4xl text-footer">Relawan</h1>
+      <div className= "w-auto h-36 md:h-96 flex flex-col justify-center items-center text-black background" style={{ backgroundImage: 'url("https://i.ibb.co/fYg7Mw4/environment-volunteer-concept-with-group-con-grupo.jpg")', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundAttachment: 'fixed'}}>
+        <h1 className="font-bold text-4xl md:text-6xl text-slate-50 backdrop-blur-xs">Relawan</h1>
       </div>
       <div className="bg-white my-10 mx-5 md:mx-auto text-black md:w-4/5 border-2 border-slate-100">
         <div className="w-4/5 md:w-3/4 mx-auto my-10">
@@ -16,7 +16,7 @@ export default function Relawan(props) {
           <p className="text-black text-justify text-base md:indent-10">Jadilah Pahlawan Pangan dengan Berkah Pangan! Dengan berkontribusi dan berpartisipasi dalam program kami, Anda dapat menjadi pahlawan yang membantu mengatasi masalah kelaparan dan ketidakcukupan pangan di Indonesia. Setiap donasi makanan atau dana yang Anda berikan akan memberikan manfaat yang nyata bagi mereka yang membutuhkan. Dengan menjadi Pahlawan Pangan, Anda turut berperan dalam menjembatani kesenjangan pangan, mengurangi pemborosan makanan, dan memastikan akses pangan yang merata dan bermakna bagi semua masyarakat. Bergabunglah dengan Berkah Pangan dan bersama-sama kita dapat menciptakan perubahan positif dalam memenuhi kebutuhan pangan, memberikan harapan, dan menyebarkan kebaikan kepada mereka yang membutuhkan.</p>
         </div>
         <div className="w-4/5 md:w-3/4 mx-auto my-10">
-          <img className="w-full h-72 md:h-96 object-cover" src="https://i.ibb.co/23FC2f9/25579258-7103291.jpg" alt="" />
+          <img className="w-full h-72 md:h-96 object-cover" src="https://img.freepik.com/free-vector/flat-giving-tuesday-background_52683-77157.jpg?w=996&t=st=1688795102~exp=1688795702~hmac=c3aad61732fb7172be33eb25960b6635bd540461b6174d39f5dd3342305c576d" alt="" />
         </div>
         <div className="w-4/5 md:w-3/4 mx-auto my-10">
           <h2 className="text-4xl font-semibold text-button mb-5 mt-10">Aturan Dan Ketentuan</h2>

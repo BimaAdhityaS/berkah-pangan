@@ -6,7 +6,7 @@ import { Head, Link } from "@inertiajs/react";
 export default function Donasi(props) {
     const deskripsi = "Silahkan Pilih Donasimu!"
     const judul = "Donasi"
-    const url = "https://i.ibb.co/8P6LCY6/Donasi-2.png"
+    const url = "https://i.ibb.co/vc4XwKH/community-concept-with-nature-close-up.jpg"
 
     return (
         <div class="bg-white text-black">

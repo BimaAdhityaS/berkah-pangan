@@ -8,7 +8,7 @@ export default function penerima(props) {
 
     const deskripsi = "Penerima Berkah Pangan?"
     const judul = "Penerima"
-    const url = "https://i.ibb.co/2NzNXJn/Penerima.png"
+    const url = "https://img.freepik.com/premium-photo/mexican-protected-delivery-man-delivering-ecological-bag-with-fruits-vegetables-woman_79390-512.jpg?w=826"
 
     const [lokasi, setlokasi] = useState('');
     const [alamat, setalamat] = useState('');

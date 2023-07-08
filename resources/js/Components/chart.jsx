@@ -27,9 +27,24 @@ const BarChart = () => {
       },
     ],
   };
+
+  const options = {
+    scales: {
+      y: {
+        beginAtZero: true,
+        maxTicksLimit: 5,
+        max: 700,
+      },
+    },
+    responsive: true,
+    maintainAspectRatio: false,
+  };
+
   return (
-    <div className="flex justify-center items-center w-3/4 py-5 px-0">
-      <Bar data={data} />
+    <div className="flex justify-center items-center w-auto py-5 px-0 h-96">
+      <div className="w-screen md:max-w-6xl h-96">
+        <Bar data={data} options={options} />
+      </div>
     </div>
   );
 };

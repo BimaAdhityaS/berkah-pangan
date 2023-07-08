@@ -5,11 +5,13 @@ import About from '@/Components/Tentang Kami/Navbar_About';
 import Footer from '@/Components/Footer';
 
 export default function TentangKami(props) {
+    const url = "https://img.freepik.com/free-photo/colleagues-giving-fist-bump_53876-64857.jpg?w=996&t=st=1688798334~exp=1688798934~hmac=aa2b6936b2d6d21e92a2d246fb987b9386dbc12b26cf8c24fc2951aa5c6d3937"
+
     return (
         <div className='bg-white'>
             <Head title={props.title} />
             <Navbar />
-            <About />
+            <About img={url}  />
             <div className="my-20 text-black mx-auto w-4/5 border-2 border-slate-100">
                 <h1 className="font-medium text-4xl text-h1 text-center py-10">Latar Belakang</h1>
                 <img className="w-2/4 h-auto mx-auto rounded-xl mb-10" src='https://i.ibb.co/7VFnXgM/Berkah-Pangan-2.png'></img>

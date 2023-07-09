@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "BUILD_PATH='./dist' vite build"
+        "build": "BUILD_PATH='./dist' build && vite build --ssr"
     },
     "devDependencies": {
         "@headlessui/react": "^1.7.15",
